@@ -1,0 +1,124 @@
+.app {
+  font-family: 'Arial', sans-serif;
+  background-color:#1e8183;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+  padding: 1rem;
+}
+
+.navbar:hover {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  font-weight: bold;
+  color: #ff6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.nav-link:hover {
+  color: #ff6347;
+  transform: scale(1.2);
+}
+
+.search-bar {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.fa-heart, .fa-filter {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.fa-heart:hover, .fa-filter:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .search-bar {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+  }
+
+  .search-bar {
+    width: 95%;
+  }
+}

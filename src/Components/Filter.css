@@ -1,0 +1,30 @@
+.filter-modal {
+    background-color: rgba(248, 249, 250, 0.85);
+    border-radius: 8px;
+  }
+  
+  .filter-modal .modal-header {
+    border-bottom: 1px solid rgba(222, 226, 230, 0.5); 
+  }
+  
+  .filter-dropdown {
+    border: 1px solid rgba(206, 212, 218, 0.7); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); 
+  }
+  
+  .filter-dropdown option {
+    padding: 10px;
+  }
+  
+  .filter-button {
+    padding: 8px 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: rgba(0, 123, 255, 0.9); 
+    color: white;
+  }
+  

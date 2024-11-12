@@ -1,0 +1,75 @@
+.recipe-list {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .recipe-card {
+    width: calc(30% - 20px);
+    max-width: 350px;
+    margin: 0 1rem;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image-container {
+    overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .recipe-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .favorite-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: red;
+    margin-right: 10px;
+  }
+  
+  .favorite-button.active {
+    background-color: rgba(220, 38, 38, 0.9);
+    color: white;
+  }
+  
+  .favorite-button:hover {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+  }
+  
+  .btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  .btn-primary:hover {
+    background-color: rgba(0, 123, 255, 0.9);
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .recipe-card {
+      width: calc(45% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .recipe-card {
+      width: calc(100% - 20px);
+    }
+  }
+  
